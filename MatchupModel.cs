@@ -8,8 +8,17 @@ namespace TrackerLibrary
 {
     public class MatchupModel
     {
+        /// <summary>
+        /// Entry matchups (who with who) 
+        /// </summary>
         public List<MatchupEntryModel> Entries { get; set; } = new List<MatchupEntryModel>();
+        /// <summary>
+        /// What team wins
+        /// </summary>
         public TeamModel Winner { get; set; }
+        /// <summary>
+        /// Wchith round 
+        /// </summary>
         public int MatchupRound { get; set; }
     }
 }

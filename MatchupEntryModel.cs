@@ -11,10 +11,14 @@ namespace TrackerLibrary
         /// <summary>
         /// Represents one team in the matchup
         /// </summary>
-
-
         public TeamModel TeamCompeting { get; set; }
+        /// <summary>
+        /// Represents score for this particular team
+        /// </summary>
         public double Score { get; set; }
+        /// <summary>
+        /// List of matchup that this team won
+        /// </summary>
         public MatchupModel ParentMatchup { get; set; }
     }
 }
