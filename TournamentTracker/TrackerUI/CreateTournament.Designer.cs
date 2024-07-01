@@ -38,9 +38,9 @@
             btn1.FlatAppearance.MouseOverBackColor = Color.FromArgb(255, 192, 192);
             btn1.FlatStyle = FlatStyle.Flat;
             btn1.ForeColor = Color.Red;
-            btn1.Location = new Point(171, 117);
+            btn1.Location = new Point(124, 117);
             btn1.Name = "btn1";
-            btn1.Size = new Size(410, 307);
+            btn1.Size = new Size(488, 307);
             btn1.TabIndex = 0;
             btn1.Text = "Click me!!";
             btn1.UseVisualStyleBackColor = true;
