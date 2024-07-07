@@ -40,7 +40,7 @@
             tournamentDashboardLabel.AutoSize = true;
             tournamentDashboardLabel.Font = new Font("Segoe UI Light", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
             tournamentDashboardLabel.ForeColor = SystemColors.HotTrack;
-            tournamentDashboardLabel.Location = new Point(260, 22);
+            tournamentDashboardLabel.Location = new Point(262, 60);
             tournamentDashboardLabel.Name = "tournamentDashboardLabel";
             tournamentDashboardLabel.Size = new Size(367, 47);
             tournamentDashboardLabel.TabIndex = 15;
@@ -49,7 +49,7 @@
             // selectExistingTournamentDropDown
             // 
             selectExistingTournamentDropDown.FormattingEnabled = true;
-            selectExistingTournamentDropDown.Location = new Point(216, 162);
+            selectExistingTournamentDropDown.Location = new Point(218, 216);
             selectExistingTournamentDropDown.Name = "selectExistingTournamentDropDown";
             selectExistingTournamentDropDown.Size = new Size(454, 38);
             selectExistingTournamentDropDown.TabIndex = 18;
@@ -59,11 +59,12 @@
             loadExistingTournamentLabel.AutoSize = true;
             loadExistingTournamentLabel.Font = new Font("Segoe UI Light", 22F, FontStyle.Regular, GraphicsUnit.Point);
             loadExistingTournamentLabel.ForeColor = SystemColors.HotTrack;
-            loadExistingTournamentLabel.Location = new Point(274, 121);
+            loadExistingTournamentLabel.Location = new Point(276, 172);
             loadExistingTournamentLabel.Name = "loadExistingTournamentLabel";
             loadExistingTournamentLabel.Size = new Size(339, 41);
             loadExistingTournamentLabel.TabIndex = 17;
             loadExistingTournamentLabel.Text = "Load existing tournament";
+            loadExistingTournamentLabel.Click += loadExistingTournamentLabel_Click;
             // 
             // loadTournamentButton
             // 
@@ -73,7 +74,7 @@
             loadTournamentButton.FlatAppearance.MouseOverBackColor = SystemColors.GradientActiveCaption;
             loadTournamentButton.FlatStyle = FlatStyle.Flat;
             loadTournamentButton.ForeColor = SystemColors.HotTrack;
-            loadTournamentButton.Location = new Point(327, 301);
+            loadTournamentButton.Location = new Point(329, 288);
             loadTournamentButton.Name = "loadTournamentButton";
             loadTournamentButton.Size = new Size(232, 49);
             loadTournamentButton.TabIndex = 22;
@@ -88,7 +89,7 @@
             createTournamentButton.FlatAppearance.MouseOverBackColor = SystemColors.GradientActiveCaption;
             createTournamentButton.FlatStyle = FlatStyle.Flat;
             createTournamentButton.ForeColor = SystemColors.HotTrack;
-            createTournamentButton.Location = new Point(318, 451);
+            createTournamentButton.Location = new Point(320, 371);
             createTournamentButton.Name = "createTournamentButton";
             createTournamentButton.Size = new Size(251, 75);
             createTournamentButton.TabIndex = 28;

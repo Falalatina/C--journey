@@ -42,7 +42,7 @@
             tournamentPlayersLabel = new Label();
             deleteSelectedPlayersButton = new Button();
             deleteSelectedPriceButton = new Button();
-            label1 = new Label();
+            teamsLabel = new Label();
             prizelistBox = new ListBox();
             createTournamentButton = new Button();
             SuspendLayout();
@@ -211,16 +211,16 @@
             deleteSelectedPriceButton.Text = "Delete selected";
             deleteSelectedPriceButton.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // teamsLabel
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Light", 22F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.HotTrack;
-            label1.Location = new Point(465, 299);
-            label1.Name = "label1";
-            label1.Size = new Size(211, 41);
-            label1.TabIndex = 24;
-            label1.Text = "Teams / players";
+            teamsLabel.AutoSize = true;
+            teamsLabel.Font = new Font("Segoe UI Light", 22F, FontStyle.Regular, GraphicsUnit.Point);
+            teamsLabel.ForeColor = SystemColors.HotTrack;
+            teamsLabel.Location = new Point(465, 299);
+            teamsLabel.Name = "teamsLabel";
+            teamsLabel.Size = new Size(211, 41);
+            teamsLabel.TabIndex = 24;
+            teamsLabel.Text = "Teams / players";
             // 
             // prizelistBox
             // 
@@ -255,7 +255,7 @@
             ClientSize = new Size(886, 626);
             Controls.Add(createTournamentButton);
             Controls.Add(deleteSelectedPriceButton);
-            Controls.Add(label1);
+            Controls.Add(teamsLabel);
             Controls.Add(prizelistBox);
             Controls.Add(deleteSelectedPlayersButton);
             Controls.Add(tournamentPlayersLabel);
@@ -294,7 +294,7 @@
         private Label tournamentPlayersLabel;
         private Button deleteSelectedPlayersButton;
         private Button deleteSelectedPriceButton;
-        private Label label1;
+        private Label teamsLabel;
         private ListBox prizelistBox;
         private Button createTournamentButton;
     }

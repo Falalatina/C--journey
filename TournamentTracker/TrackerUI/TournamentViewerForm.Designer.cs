@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             tournamentNameLabel = new Label();
-            label1 = new Label();
-            label2 = new Label();
+            roundLabel = new Label();
+            scorelabel = new Label();
             tournamentName = new Label();
             unplayedOnly = new CheckBox();
             roundDropDown = new ComboBox();
@@ -54,29 +54,29 @@
             tournamentNameLabel.TabIndex = 0;
             tournamentNameLabel.Text = "Tournament:";
             // 
-            // label1
+            // roundLabel
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Light", 22F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.HotTrack;
-            label1.Location = new Point(83, 141);
-            label1.Name = "label1";
-            label1.Size = new Size(108, 41);
-            label1.TabIndex = 1;
-            label1.Text = "Round:";
-            label1.Click += label1_Click;
+            roundLabel.AutoSize = true;
+            roundLabel.Font = new Font("Segoe UI Light", 22F, FontStyle.Regular, GraphicsUnit.Point);
+            roundLabel.ForeColor = SystemColors.HotTrack;
+            roundLabel.Location = new Point(83, 141);
+            roundLabel.Name = "roundLabel";
+            roundLabel.Size = new Size(108, 41);
+            roundLabel.TabIndex = 1;
+            roundLabel.Text = "Round:";
+            roundLabel.Click += label1_Click;
             // 
-            // label2
+            // scorelabel
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Light", 22F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.HotTrack;
-            label2.Location = new Point(83, 359);
-            label2.Name = "label2";
-            label2.Size = new Size(94, 41);
-            label2.TabIndex = 2;
-            label2.Text = "Score:";
-            label2.Click += label2_Click_2;
+            scorelabel.AutoSize = true;
+            scorelabel.Font = new Font("Segoe UI Light", 22F, FontStyle.Regular, GraphicsUnit.Point);
+            scorelabel.ForeColor = SystemColors.HotTrack;
+            scorelabel.Location = new Point(83, 359);
+            scorelabel.Name = "scorelabel";
+            scorelabel.Size = new Size(94, 41);
+            scorelabel.TabIndex = 2;
+            scorelabel.Text = "Score:";
+            scorelabel.Click += label2_Click_2;
             // 
             // tournamentName
             // 
@@ -203,8 +203,8 @@
             Controls.Add(roundDropDown);
             Controls.Add(unplayedOnly);
             Controls.Add(tournamentName);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(scorelabel);
+            Controls.Add(roundLabel);
             Controls.Add(tournamentNameLabel);
             Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(5, 6, 5, 6);
@@ -218,8 +218,8 @@
         #endregion
 
         private Label tournamentNameLabel;
-        private Label label1;
-        private Label label2;
+        private Label roundLabel;
+        private Label scorelabel;
         private Label tournamentName;
         private CheckBox unplayedOnly;
         private ComboBox roundDropDown;
