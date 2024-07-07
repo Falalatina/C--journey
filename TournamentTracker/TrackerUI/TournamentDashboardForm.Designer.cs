@@ -28,19 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            prizeLabel = new Label();
+            tournamentDashboardLabel = new Label();
+            selectExistingTournamentDropDown = new ComboBox();
+            loadExistingTournamentLabel = new Label();
+            loadTournamentButton = new Button();
+            createTournamentButton = new Button();
             SuspendLayout();
             // 
-            // prizeLabel
+            // tournamentDashboardLabel
             // 
-            prizeLabel.AutoSize = true;
-            prizeLabel.Font = new Font("Segoe UI Light", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
-            prizeLabel.ForeColor = SystemColors.HotTrack;
-            prizeLabel.Location = new Point(344, 290);
-            prizeLabel.Name = "prizeLabel";
-            prizeLabel.Size = new Size(198, 47);
-            prizeLabel.TabIndex = 15;
-            prizeLabel.Text = "Create Prize";
+            tournamentDashboardLabel.AutoSize = true;
+            tournamentDashboardLabel.Font = new Font("Segoe UI Light", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
+            tournamentDashboardLabel.ForeColor = SystemColors.HotTrack;
+            tournamentDashboardLabel.Location = new Point(260, 22);
+            tournamentDashboardLabel.Name = "tournamentDashboardLabel";
+            tournamentDashboardLabel.Size = new Size(367, 47);
+            tournamentDashboardLabel.TabIndex = 15;
+            tournamentDashboardLabel.Text = "Tournament Dashboard";
+            // 
+            // selectExistingTournamentDropDown
+            // 
+            selectExistingTournamentDropDown.FormattingEnabled = true;
+            selectExistingTournamentDropDown.Location = new Point(216, 162);
+            selectExistingTournamentDropDown.Name = "selectExistingTournamentDropDown";
+            selectExistingTournamentDropDown.Size = new Size(454, 38);
+            selectExistingTournamentDropDown.TabIndex = 18;
+            // 
+            // loadExistingTournamentLabel
+            // 
+            loadExistingTournamentLabel.AutoSize = true;
+            loadExistingTournamentLabel.Font = new Font("Segoe UI Light", 22F, FontStyle.Regular, GraphicsUnit.Point);
+            loadExistingTournamentLabel.ForeColor = SystemColors.HotTrack;
+            loadExistingTournamentLabel.Location = new Point(274, 121);
+            loadExistingTournamentLabel.Name = "loadExistingTournamentLabel";
+            loadExistingTournamentLabel.Size = new Size(339, 41);
+            loadExistingTournamentLabel.TabIndex = 17;
+            loadExistingTournamentLabel.Text = "Load existing tournament";
+            // 
+            // loadTournamentButton
+            // 
+            loadTournamentButton.BackColor = Color.Transparent;
+            loadTournamentButton.FlatAppearance.BorderColor = Color.Blue;
+            loadTournamentButton.FlatAppearance.MouseDownBackColor = SystemColors.ButtonHighlight;
+            loadTournamentButton.FlatAppearance.MouseOverBackColor = SystemColors.GradientActiveCaption;
+            loadTournamentButton.FlatStyle = FlatStyle.Flat;
+            loadTournamentButton.ForeColor = SystemColors.HotTrack;
+            loadTournamentButton.Location = new Point(327, 301);
+            loadTournamentButton.Name = "loadTournamentButton";
+            loadTournamentButton.Size = new Size(232, 49);
+            loadTournamentButton.TabIndex = 22;
+            loadTournamentButton.Text = "Load tournament";
+            loadTournamentButton.UseVisualStyleBackColor = false;
+            // 
+            // createTournamentButton
+            // 
+            createTournamentButton.BackColor = Color.Transparent;
+            createTournamentButton.FlatAppearance.BorderColor = Color.Blue;
+            createTournamentButton.FlatAppearance.MouseDownBackColor = SystemColors.ButtonHighlight;
+            createTournamentButton.FlatAppearance.MouseOverBackColor = SystemColors.GradientActiveCaption;
+            createTournamentButton.FlatStyle = FlatStyle.Flat;
+            createTournamentButton.ForeColor = SystemColors.HotTrack;
+            createTournamentButton.Location = new Point(318, 451);
+            createTournamentButton.Name = "createTournamentButton";
+            createTournamentButton.Size = new Size(251, 75);
+            createTournamentButton.TabIndex = 28;
+            createTournamentButton.Text = "Create tournament";
+            createTournamentButton.UseVisualStyleBackColor = false;
             // 
             // TournamentDashboardForm
             // 
@@ -48,7 +101,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(886, 626);
-            Controls.Add(prizeLabel);
+            Controls.Add(createTournamentButton);
+            Controls.Add(loadTournamentButton);
+            Controls.Add(selectExistingTournamentDropDown);
+            Controls.Add(loadExistingTournamentLabel);
+            Controls.Add(tournamentDashboardLabel);
             Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             ForeColor = SystemColors.HotTrack;
             Margin = new Padding(5, 6, 5, 6);
@@ -60,6 +117,10 @@
 
         #endregion
 
-        private Label prizeLabel;
+        private Label tournamentDashboardLabel;
+        private ComboBox selectExistingTournamentDropDown;
+        private Label loadExistingTournamentLabel;
+        private Button loadTournamentButton;
+        private Button createTournamentButton;
     }
 }
