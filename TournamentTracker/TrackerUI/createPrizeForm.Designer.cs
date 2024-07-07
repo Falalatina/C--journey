@@ -37,6 +37,7 @@
             BackColor = Color.White;
             ClientSize = new Size(886, 626);
             Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            ForeColor = SystemColors.HotTrack;
             Margin = new Padding(6, 7, 6, 7);
             Name = "createPrizeForm";
             Text = "Create Prize";
